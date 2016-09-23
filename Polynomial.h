@@ -8,8 +8,6 @@ Name: Group 9
 #include "Term.h"
 using namespace std;
 
-
-
 class Polynomial {
 
 private:
@@ -17,12 +15,12 @@ private:
 
 public:
 	Polynomial() { ; }
-	// Copy Constructor
+	// Copy Constructor ASK URVISH ??
 	//Polynomial(const Polynomial& Current_Poly);
 	
-	const Polynomial operator+(const Polynomial& rhs_Poly);
+	const Polynomial operator+(const Polynomial& rhs_Poly);//Adds polynomials 
 	
-	friend const ostream& operator<<(ostream& output, const Polynomial& rhs_Poly);
+	friend const ostream& operator<<(ostream& output, const Polynomial& rhs_Poly);//Needs implementation!!
 	
 	//function to add Term element onto polynomial list
 	void AddTerm(string S_Term);
