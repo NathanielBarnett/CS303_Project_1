@@ -31,7 +31,7 @@ void Polynomial::AddTerm(string S_Term)
 	for (itr = L_Poly.begin(); itr != L_Poly.end(); itr++)
 	{
 		flag++;
-		if (itr->get_exponent() > N_Term.get_exponent() && flag != L_Poly.size())//If size is only 1, keep going. Ask Urvish about it as well
+		if (itr->get_exponent() > N_Term.get_exponent() && flag != L_Poly.size())//If size is only 1, keep going.
 		{
 			continue;
 		}
@@ -91,4 +91,9 @@ void Poly_Parse(const string& s, Polynomial& Poly, const string& delim)
 		if (pos == string::npos)
 			Poly.AddTerm(s.substr(i, s.length() - i));
 	}
+}
+
+friend const ostream& operator<<(ostream& output, const Polynomial& rhs_Poly)
+{
+	
 }
