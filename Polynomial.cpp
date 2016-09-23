@@ -93,7 +93,12 @@ void Poly_Parse(const string& s, Polynomial& Poly, const string& delim)
 	}
 }
 
-friend const ostream& operator<<(ostream& output, const Polynomial& rhs_Poly)
+const ostream& operator<<(ostream& output, const Polynomial& rhs_Poly)
 {
-	
+	list<Term>::iterator itr;
+	for (itr = rhs_Poly.begin(); itr != rhs_Poly.end(); itr++)
+	{
+		out << itr->get_exponent() << itr->get_coeff();
+	}
+	return out;
 }
