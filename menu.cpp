@@ -23,7 +23,7 @@ void Menu::GetUserInput()
 
 void Menu::ShowMenu()
 {
-    cout << "********** -Polynomial Program- **********" << endl;
+    cout << "********** -Polynomial Addition Program- **********" << endl;
     cout << "\nRules:\n";
     cout << "You can enter your polynomial in the follwing format : ax^n+ax-1" << endl;
     cout << "Considering a = coefficient, x = variable and n = whole number" << endl;
