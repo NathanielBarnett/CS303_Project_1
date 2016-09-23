@@ -31,7 +31,7 @@ public:
 
 	const Term operator+(const Term& m_term);//Adds terms 
 
-	void ConvertTerm(string S_Term, const string& delim = "X");
+	void ConvertTerm(string S_Term, const string& delim = "X");//Allows terms to be parsed through to seperate coeff from expo.
 
 	int get_coeff() const;
 	int get_exponent() const;
