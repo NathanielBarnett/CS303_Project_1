@@ -2,7 +2,6 @@
 #include <sstream>
 
 // Function definitions
-
 const Polynomial Polynomial::operator+(const Polynomial& rhs_Poly)
 {
 	// Identify max number of terms
@@ -11,7 +10,7 @@ const Polynomial Polynomial::operator+(const Polynomial& rhs_Poly)
 		counter = L_Poly.size();
 	else if (L_Poly.size() < rhs_Poly.L_Poly.size())
 		counter = rhs_Poly.L_Poly.size();
-	return rhs_Poly;
+	return rhs_Poly;//???????Ask Urvish
 
 }
 
@@ -32,7 +31,7 @@ void Polynomial::AddTerm(string S_Term)
 	for (itr = L_Poly.begin(); itr != L_Poly.end(); itr++)
 	{
 		flag++;
-		if (itr->get_exponent() > N_Term.get_exponent() && flag != L_Poly.size())
+		if (itr->get_exponent() > N_Term.get_exponent() && flag != L_Poly.size())//If size is only 1, keep going. Ask Urvish about it as well
 		{
 			continue;
 		}
