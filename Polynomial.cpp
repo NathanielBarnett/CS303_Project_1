@@ -1,3 +1,13 @@
+//Students : Nathaniel Barnett    | Adam Bergman         | Urvish Shah
+//Email    : nabgz8@mail.umkc.edu | ambd5d@mail.umkc.edu | ujs8t2@mail.umkc.edu
+
+//Professor: Dr. Mohammad Kuhail
+//Class    : CS 303 - Data Structures 
+
+//Date     : 9/25/2016
+//Project  : Polynomial Addition Program (Project 1B)
+
+//File name:Polynomial.cpp
 #include "Polynomial.h"
 #include <sstream>
 
