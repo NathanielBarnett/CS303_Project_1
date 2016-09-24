@@ -1,4 +1,14 @@
 #pragma once
+//Students : Nathaniel Barnett    | Adam Bergman         | Urvish Shah
+//Email    : nabgz8@mail.umkc.edu | ambd5d@mail.umkc.edu | ujs8t2@mail.umkc.edu
+
+//Professor: Dr. Mohammad Kuhail
+//Class    : CS 303 - Data Structures 
+
+//Date     : 9/25/2016
+//Project  : Polynomial Addition Program (Project 1B)
+
+//File name:Term.h
 //Term Class that contains the exponent and coefficient.
 //Also holds comparison operators to compare exponents.
 #include "Term.h"
