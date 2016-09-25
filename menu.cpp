@@ -1,13 +1,3 @@
-//Students : Nathaniel Barnett    | Adam Bergman         | Urvish Shah
-//Email    : nabgz8@mail.umkc.edu | ambd5d@mail.umkc.edu | ujs8t2@mail.umkc.edu
-
-//Professor: Dr. Mohammad Kuhail
-//Class    : CS 303 - Data Structures 
-
-//Date     : 9/25/2016
-//Project  : Polynomial Addition Program (Project 1B)
-
-//File name:menu.cpp
 #include "menu.h"
 #include "polynomial.h"
 #include "term.h"
@@ -29,11 +19,13 @@ void Menu::GetUserInput()
 
     //parse user input and convert to Term object and push onto Polynomia2
     Poly_Parse(polynomial2, user_poly);
+
+    user_poly.Poly_Print();
 }
 
 void Menu::ShowMenu()
 {
-    cout << "********** -Polynomial Addition Program- **********" << endl;
+    cout << "********** -Polynomial Program- **********" << endl;
     cout << "\nRules:\n";
     cout << "You can enter your polynomial in the follwing format : ax^n+ax-1" << endl;
     cout << "Considering a = coefficient, x = variable and n = whole number" << endl;
